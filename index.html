@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+               <a href="#"><img src="image/fb.png"></a>
+               <a href="#"><img src="image/tw.png"></a>
+               <a href="#"><img src="image/gp.png"></a>
+            </div>
+            <!--            start 1st form-->
+            <form action="" method="post" id="login" class="input-group">
+                <input type="text" class="input-field" name="textfield" placeholder="User Id" required>
+                <input type="password" class="input-field" name="textfield" placeholder="Enter Password" required>
+                <input id="check1" type="checkbox" class="check-box" name="checkbox">
+                <label for="check1">Remember Password</label>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <!--            start 2nd form-->
+            <form action="" method="post" id="register" class="input-group">
+                <input type="text" class="input-field" name="textfield" placeholder="User Id" required>
+                <input type="password" class="input-field" name="textfield" placeholder="Enter Password" required>
+                <input type="email" class="input-field" name="textfield" placeholder="Email Id" required>
+                <input id="check2" type="checkbox" class="check-box" name="checkbox">
+                <label for="check2">I agree to the terms & conditions</label>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <!--    script here-->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body></html>
